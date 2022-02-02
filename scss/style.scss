@@ -378,6 +378,8 @@ html, body {
     &__heading {
         color: $text-dark;
         font-size: $font-18;
+        outline: none;
+        cursor: pointer;
         @include tablet {
             font-size: $font-26;
         }

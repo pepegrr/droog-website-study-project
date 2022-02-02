@@ -622,6 +622,8 @@ html, body {
 .faq-item__heading {
   color: #4A2A4A;
   font-size: 18px;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
