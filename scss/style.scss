@@ -415,7 +415,7 @@ html, body {
     &__item {
         position: relative;
         flex-basis: 300px;
-        height: auto;        
+        height: auto;   
     }    
     &__image {
         display: block;
@@ -439,16 +439,23 @@ html, body {
         align-items: center;
         text-align: center;
         color: $white;
-        font-size: $font-16;
+        font-size: 12px;
+        @include tablet {
+            font-size: $font-16;
+        }
+        
     }
 }
 .gallery-content__item:hover {
     .gallery-content__text {
-        opacity: 1;
-        
+        opacity: 1;        
     }
 }
-
+.mobile-show {
+    @media screen and (max-width: 768px) {
+        opacity: 1;
+    }
+}
 //form
 
 .form {

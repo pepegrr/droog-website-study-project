@@ -701,11 +701,23 @@ html, body {
           align-items: center;
   text-align: center;
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .gallery-content__text {
+    font-size: 16px;
+  }
 }
 
 .gallery-content__item:hover .gallery-content__text {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-show {
+    opacity: 1;
+  }
 }
 
 .form {
