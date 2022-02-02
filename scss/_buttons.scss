@@ -1,0 +1,75 @@
+.button__link {
+    display: block;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: $border-r;
+    text-decoration: none;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
+    &:hover, &:active {
+        cursor: pointer;
+        outline: 1px inset;
+        background-color: rgba($white, 0.3);
+    }
+}
+
+.button {
+    &--yellow {
+        background-color: $accent;
+        font-family: $extrabold;
+        &--regular {
+        padding: 11px 0px;
+        font-size: $font-20;
+        }
+        &--big {
+            padding: 20px 0px;
+            font-size: $font-26;
+        }
+    }
+    &--blue {
+        background-color: $accent-blue;
+        &--big {
+            letter-spacing: 0.2rem;
+            padding: 16px 0px;
+            width: 310px;
+        }
+        &--small {
+            padding: 13px 0px;
+            width: 180px;
+            font-size: $font-18;
+        }
+    }
+}
+  
+.button--top {
+    display: none;
+    @include tablet {
+        display: block;
+        width: 239px;
+        text-align: center;
+    }
+}
+.button--form {
+    border: none;
+    width: 300px;
+        
+}
+
+.banner-arrow {
+    align-self: center;
+    width: 40px;
+    text-decoration: none;
+    }
+
+.banner-arrow__item {
+    color: $white;
+    font-size: $font-34;
+    align-self: center;
+    @include tablet {
+        display: none;
+    }
+}
+.button--banner {
+    @extend .button--top;
+    width: 310px;
+}
