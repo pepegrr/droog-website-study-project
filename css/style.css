@@ -714,7 +714,7 @@ html, body {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .mobile-show {
     opacity: 1;
   }
